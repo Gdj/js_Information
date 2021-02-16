@@ -16,7 +16,6 @@ Embedded javaScript templates : [http://ejs.co](http://ejs.co)
 - [5. for 안에 if ](#5-for-안에-if)
 
 
-
 ## 1. ejs 문법 태그
 - `<%`  'Scriptlet'태그, 제어 흐름 용, 출력 없음
 - `<%_` 'Scriptlet'태그, 앞의 모든 공백을 제거합니다.
@@ -112,6 +111,7 @@ Embedded javaScript templates : [http://ejs.co](http://ejs.co)
     <% }; -%>
   </ul>
 ```
+
 
 ## 5. for 안에 if
   javaScript 거의 같은 문법을 사용 한다.
