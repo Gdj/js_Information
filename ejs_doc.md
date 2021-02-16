@@ -34,11 +34,15 @@ Embedded javaScript templates : [http://ejs.co](http://ejs.co)
 
 ### 2.1. 기본
   파일경로 와 파일명, 확장자 가지 적어준다.
-`<%- include('파일경로/파일이름.ejs') -%>`
+```
+  <%- include('파일경로/파일이름.ejs') -%>
+```
 
 ### 2.2. 변수 넘기기
   같은 폴더 경로의 '_item.ejs' 파일에 오브젝트 형식으로 값을 전달할 수 있다.
-`<%- include('./item.ejs' , { options : ["AA", "BB", "CC"] }) -%>`
+```
+  <%- include('./item.ejs' , { options : ["AA", "BB", "CC"] }) -%>
+```
 
 ### 2.3. item.ejs
   값을 넘겨 받은 _item.ejs 처리 방법은 아래와 같이 테그중간에 삽입 가능하다.
