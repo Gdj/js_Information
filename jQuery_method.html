@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Method</title>
+    <style type="text/css">
+      .trp.table-data-type1 {
+        width: 100%;
+        border-top: 2px solid #000;
+        text-align: center;
+        table-layout: fixed;
+        border-collapse: collapse;
+      }
+
+      .trp.table-data-type1 thead th,
+      .trp.table-data-type1 tbody th,
+      .trp.table-data-type1 tfoot th {
+        height: 38px;
+        padding: 4px 5px 3px 5px;
+        border-bottom: 1px solid #d9d9d9;
+        border-right: 1px solid #efefef;
+        font-size: 13px;
+        background-color: #cfcfcf
+      }
+
+      .trp.table-data-type1 thead th:last-child,
+      .trp.table-data-type1 tbody th:last-child,
+      .trp.table-data-type1 tfoot th:last-child {
+        border-right: 0;
+      }
+
+      .trp.table-data-type1 tbody td {
+        height: 35px;
+        padding: 4px 5px 3px 5px;
+        border-right: 1px solid #d5d5d5;
+        border-bottom: 1px solid #d5d5d5;
+        font-size: 13px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        word-wrap: normal;
+      }
+
+      .trp.table-data-type1 tbody td:first-child {
+        text-align: left;
+      }
+
+      .trp.table-data-type1 tbody td:last-child {
+        border-right: 0;
+      }
+
+      .trp.table-data-type1 tbody tr:nth-child(odd) td {
+        //background-color: #eee;
+      }
+
+      .trp.table-data-type1 tbody td.tit {
+        padding-left: 50px;
+        text-align: left;
+      }
+
+      .trp.table-data-type1 tbody td .txt-box {
+        text-align: left;
+        margin-left: 5px
+      }
+
+      .trp.table-data-type1 tbody td .radio-box {
+        text-align: left;
+        margin-left: 5px
+      }
+
+      .trp.table-data-type1 tbody td .txt-box {
+        text-align: left;
+        margin-right: 5px
+      }
+
+      .trp.table-data-type1 .bd-r {
+        border-right: 1px solid #d5d5d5;
+      }
+
+      .trp.table-data-type1 .bd-l {
+        border-left: 1px solid #d5d5d5;
+      }
+
+      .trp.table-data-type1 .bd-t {
+        border-top: 1px solid #d5d5d5;
+      }
+
+      .trp.table-data-type1 .bd-b {
+        border-bottom: 1px solid #d5d5d5;
+      }
+
+      .trp.table-data-type1 .bd-rn {
+        border-right: none;
+      }
+
+      .trp.table-data-type1 .bd-ln {
+        border-left: none;
+      }
+
+      .trp.table-data-type1 .bd-tn {
+        border-top: none;
+      }
+
+      .trp.table-data-type1 .bd-bn {
+        border-bottom: none;
+      }
+    </style>
+</head>
+<body>
+  
+  <div class="table-area">
+    <h3>스타일 메서드</h3>
+    <table class="trp table-data-type1">
+      <colgroup>
+        <col style="width:auto">
+        <col style="width:auto">
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>메소드</td>
+          <td>설명</td>
+        </tr>
+        <tr >
+          <td>$(선택자).css("스타일 속성 이름")<br>$(선택자).css(["스타일 속성 이름", ...])</td>
+          <td>해당 선택자에 원하는 스타일 부여</td>
+        </tr>
+        <tr >
+          <td>$(선택자).css("스타일 속성 이름",값) <br>$(선택자).css({스타일 속성 이름:값, ...})</td>
+          <td>해당 선택자에 원하는 스타일 속성 값 설정</td>
+        </tr>
+        <tr >
+          <td>$(선택자).addClass("클래스 이름")</td>
+          <td>해당 선택자에 클래스 추가</td>
+        </tr>
+        <tr >
+          <td>$(선택자).removeClass("클래스 이름")</td>
+          <td>해당 선택자 클래스 삭제</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <div class="table-area">
+    <h3>속성 메서드</h3>
+   <table class="trp table-data-type1">
+     <colgroup>
+        <col style="width:auto">
+        <col style="width:auto">
+      </colgroup>
+      <tbody>
+        <tr style="height: 20px;">
+          <td style="width: 50%; height: 20px; text-align: center;">메소드</td>
+          <td style="width: 50%; height: 20px; text-align: center;">설명</td>
+        </tr>
+        <tr style="height: 20px;">
+          <td style="width: 50%; height: 20px;">$(선택자).attr("속성이름") <br>$(선택자).data("data-속성이름")</td>
+          <td style="width: 50%; height: 20px;">해당 선택자에 속성값 구하기</td>
+        </tr>
+        <tr style="height: 20px;">
+          <td style="width: 50%; height: 20px;">$(선택자).attr("속성이름","값") <br>$(선택자).data("data-속성이름","값")</td>
+          <td style="width: 50%; height: 20px;">해당 선택자에 속성값 설정하기</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+</body>
+</html>
