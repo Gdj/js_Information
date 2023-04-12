@@ -10,10 +10,10 @@ js_es6.md
     - start : 앞에서 인덱스 시작위치
     - end   : 뒤에서 부터
 
-  ### 
+  ### splice
     > array.splice(index, howmany, item1, ....., itemX)
-    - index   : 제거 추가 할 시작위치 
-    - howmany : 제거할 항목수
+    - index               : 제거 추가 할 시작위치 
+    - howmany             : 제거할 항목수
     - item1, ....., itemX : 추가 요소
 
   ### find => string
