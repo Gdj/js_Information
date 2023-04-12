@@ -1,5 +1,4 @@
-js_es6.md
-# js A
+# js Array & Object
   > `*` 필수값 
 
   ## array
@@ -23,6 +22,14 @@ js_es6.md
   - index         : 배열 각각 현재 인덱스
   - arr           : 현재 배열
   - thisValue     : this 로전 함수에 전달될 값.
+
+  ### forEach => undefined
+    > array.forEach(function(currentValue, index, arr), thisValue)
+    - currentValue* : 배열 각각 현재 요소
+    - index         : 배열 각각 현재 인덱스
+    - arr           : 현재 배열
+    - thisValue     : this 로전 함수에 전달될 값. 
+
 
   ### map => Array
     > array.map(function(currentValue, index, arr), thisValue)
@@ -52,6 +59,29 @@ js_es6.md
   ### concat => Array
     > array1.concat(array2, array3, ..., arrayX)
     각 배열을 합침.
+  ### [...], {...} 배열, object 복재 => array | object
+    > [... arr], {... obj}
+    - arr 새로운 배열 생성
+      ``` js
+        const arr  = [1, 2];
+        const arr1 = [4, 5];
+        const result1 = [... arr]
+        const result2 = [... arr, ... arr1]
+
+        console.log(result1)  // [1, 2]
+        console.log(result2)  // [1, 2, 4, 5]
+      ```
+    - obj 새로운 오브젝트 생성
+      ``` js
+        const obj  = {a:1, b:2};
+        const obj1 = {c:4, d:5};
+        const result1 = {... obj}
+        const result2 = {... obj, ... obj1}
+
+        console.log(JSON.stringify(result1) )  // {a:1, b:2}
+        console.log(JSON.stringify(result2) )  // {a:1, b:2, c:4, d:5}
+      ```
+
 
   ### join  => string
     > array.join(separator)
