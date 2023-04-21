@@ -1,0 +1,12 @@
+{
+  "folders": [
+    {
+      "name": "js_information",
+      "path": "./"
+    }
+  ],
+  "settings": {
+    "editor.tabSize": 2,
+  }
+}
+
