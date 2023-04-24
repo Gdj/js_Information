@@ -1,0 +1,23 @@
+{
+  "name": "es6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:run"   : "babel src -d dist -w",
+    "start:view"  : "nodemon dist/es6.js",
+    "start"       : "concurrently npm:start:*",
+    "build": "babel src -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "babel-watch": "^7.7.2",
+    "concurrently": "^8.0.1",
+    "nodemon": "^2.0.22"
+  }
+}
