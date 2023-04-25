@@ -7,7 +7,7 @@
     "start:run"   : "babel src -d dist -w",
     "start:view"  : "nodemon dist/es6.js",
     "start"       : "concurrently npm:start:*",
-    "build": "babel src -d dist"
+    "build"       : "babel src -d dist"
   },
   "keywords": [],
   "author": "",

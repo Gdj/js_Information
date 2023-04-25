@@ -5,10 +5,12 @@
   - 인   수 (arguments) : 전달하는 값. (3, 4)
   - 매개변수(parameter) : 전달 받는 값 (a, b)
   ``` js
-    functon sum(a, b){
-      return a + b;
+    function sum(a, b){
+      var total1 = a+b;
+      var total2 = arguments[0]+arguments[1];
+      return (total1 === total2 )
     }
-    sum(3, 4);
+    sum(3, 4);  // true
   ```
 
   ## bind() vs call() vs apply()

@@ -6,6 +6,11 @@
 
   ## Array & Object
 
+  ### deep copy 
+    - array : `[..._arr]`
+    - object : `{..._obj}`
+    - json : `JSON.parse(JSON.stringify(_arrObj)); `
+
   ### slice
   > array.slice(start, end)
     조건에 맞는 새로운 배열.
