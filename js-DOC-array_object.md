@@ -79,7 +79,15 @@
 
   ### concat => Array
   > array1.concat(array2, array3, ..., arrayX)
-  각 배열을 합침.
+  각 배열을 합쳐 새로운 배열은 리턴
+  ``` js
+    const array1 = ['a', 'b', 'c'];
+    const array2 = ['d', 'e', 'f'];
+    const array3 = ['g', 'h', 'i'];
+    const array4 = array1.concat(array2,array3);
+    console.log(array4);
+    // Expected output: Array ["a", "b", "c", "d", "e", "f", "g", "h", "y"]
+  ```
 
   ### [...], {...} (ES6) 배열, object 복재 => array | object
   > [... arr], {... obj}
@@ -128,7 +136,6 @@
       mySet.add(1);    // Set { 1 }
       mySet.add(5);    // Set { 1, 5 }
       mySet.add(5);    // Set { 1, 5 }
-
       mySet.has(5);    // true
       mySet.delete(5); // set에서 5를 제거함
     ```
