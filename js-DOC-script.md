@@ -10,5 +10,6 @@
     <head>
   ```
 
-  ## js 선언
-  - 문법 오류 표기(ES5) : 'use strice'
+  ## eslint
+  - 문법 오류 안보기      : `/* eslint-disable */`
+  - 문법 엄격 모드" (ES5) : `"use strict";`

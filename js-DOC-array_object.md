@@ -38,7 +38,6 @@
   - arr           : 현재 배열
   - thisValue     : this 로전 함수에 전달될 값. 
 
-
   ### map => Array
   > array.map(function(currentValue, index, arr), thisValue)
   각 배열 요소에 대한 함수 결과를 Boolean 으로 새로운 배열 요소를 생성.
@@ -46,6 +45,20 @@
   - index         : 배열 각각 현재 인덱스
   - arr           : 현재 배열
   - thisValue     : this 로전 함수에 전달될 값.
+
+  ### indexOf() => index
+  > array.index(Value)
+  배열 요소를 찾아 인댁스를 반환 한다. 없으면 `-1`
+
+  ### find => Value
+  > array.find(function(currentValue){ currentValue = 10})
+  조건에 맞는 첫번재 값을 반환한다. 없다면 `undefined`
+  - currentValue* : 배열 각각 현재 요소
+
+  ### findIndex => index
+  > array.findIndex(function(currentValue){ currentValue = 10})
+  조건에 맞는 첫번재 Index를 반환한다. 없다면 `-1`
+  - currentValue* : 배열 각각 현재 요소
 
   ### filter (ES5) => Array
   > array.filter(function(currentValue, index, arr), thisValue)
@@ -106,6 +119,19 @@
   > array.keys()
   키가 있는 배열로 반환
 
+
+  
+  ## Set (ES6)
+  - 중복되지 않는 배열 형태
+    ``` js
+      var mySet = new Set();
+      mySet.add(1);    // Set { 1 }
+      mySet.add(5);    // Set { 1, 5 }
+      mySet.add(5);    // Set { 1, 5 }
+
+      mySet.has(5);    // true
+      mySet.delete(5); // set에서 5를 제거함
+    ```
 
   ## JSON
   - parse : JSON => Obj
