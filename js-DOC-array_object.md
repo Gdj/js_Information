@@ -88,8 +88,19 @@
     console.log(array4);
     // Expected output: Array ["a", "b", "c", "d", "e", "f", "g", "h", "y"]
   ```
+  
+  ### Object.assign (ES6) => Array | Object 
+  > Object.assign(target, ...sources)
+  타겟 객체에 이후 객체를 덮어 써 새로운 `Object` 리턴
+  ``` js
+    const obj1 = {a:1, b:2};
+    const obj2 = {b:4, c:5, d:6};
+    const objall = Object.assign( {}, obj1, obj2 );
+    console.log(objall);
+    // Expected output: Object {a:1, b:4, c:5, d:6 }
+  ```
 
-  ### [...], {...} (ES6) 배열, object 복재 => array | object
+  ### [...], {...} (ES6) array, object 복재 => array | object
   > [... arr], {... obj}
   - arr 새로운 배열 생성
     ``` js
