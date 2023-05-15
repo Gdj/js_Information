@@ -1,8 +1,9 @@
 # js [Array & Object & JSON]
   > `*` 필수값 
 
-  - [Array & Object](#Array_&_Object)
-  - [JSON](#JSON)
+  - [Array & Object](#array-&-object)
+  - [Set (ES6)](#set-(es6))
+  - [JSON](#json)
 
   ## Array & Object
 
