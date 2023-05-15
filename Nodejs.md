@@ -17,3 +17,8 @@
 
   - 특정 버젼 삭제
   `nvm uninstall 14.13.0`
+
+
+## 다중 명령실행 concurrently
+  1. 설치 : `npm install concurrently --save`
+  2. 실행 : concurrently 명령어 : 명령어
