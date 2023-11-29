@@ -64,6 +64,6 @@
 - `/i` : 영문 대소문자를 무시, 모두 일치하는 패턴 검색 (case Insensitive)
 - `/m` : 여러줄 (Multiline)
 - `/s` : 한줄 (Single line)
-- `/u` : 유니코드 (Unicode)
-- `/y` : 유니코드 (stickY)
+- `/u` : 유니코드 전체를 지원(Unicode)
+- `/y` : 문자 내 특정 위치에서 검색 (sticky 모드 활성화)
   
