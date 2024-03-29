@@ -129,6 +129,19 @@
   > array.join(separator)
   - separator   : 배열 요소 구분기호, 없으면 `,`기본값
   
+  ### sort(), .reverse();
+  > Array.sort( fn(a, b){ } )
+  - 문자 비교 array 
+    오름차순 : `Array.sort()`
+    내림차순 : `Array.sort().reverse()`
+  - 숫자 비교 [array, Object]
+    오름차수 : `Array.sort((a,b)=> a.num - b.num )`
+    내림차수 : `Array.sort((a,b)=> b.num - a.num )`
+  - 문자 비교 [array, Object] 
+    오름차수 : `Array.sort((a,b)=> a.name.localeCompare(b.name) )`
+    내림차수 : `Array.sort((a,b)=> b.name.localeCompare(a.name) )`
+  
+
   ### indexOf => number
   > array.indexOf(item, start)
   - item  : 검색 대상
