@@ -78,6 +78,22 @@
   - arr           : 현재 배열
   - initialValue  : 함수에 초기값전달
 
+  ### 두항목 순서 변경 swap
+  - 임시 변수에 담고 교환하기(ES5)
+  ``` js  
+    var myArray = ["a", "b", "c", "d", "e"];  // 1번,과 2번변경
+    var temp = myArray[1];
+    myArray[1] = myArray[2]
+    myArray[2] = temp;
+    console.log(myArray)                      // ["a", "c", "b", "d", "e"]
+  ```
+  - destructuring 문법(ES6)
+  ``` js
+    var myArray = ["a", "b", "c", "d", "e"];  // 1번,과 2번변경
+    [  myArray[1],  myArray[2] ] = [  myArray[2],  myArray[1] ]
+    console.log(myArray)                      // ["a", "c", "b", "d", "e"]
+  ```
+
   ### concat => Array
   > array1.concat(array2, array3, ..., arrayX)
   각 배열을 합쳐 새로운 배열은 리턴
