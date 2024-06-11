@@ -6,6 +6,14 @@
   - [JSON](#json)
 
   ## Array & Object
+  - 더미 데이터생성
+  ``` js
+    const dataToInsert = [...Array(40).keys()].map(i => ({
+      title: `타이틑 넘버링 #${i}`,  
+      body: '바디 데이터',
+      tags: ['가짜', '데이터'],
+    }));
+  ```
 
   ### deep copy 
     - array : `[..._arr]`
