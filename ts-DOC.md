@@ -721,8 +721,8 @@
       console.log("User9_4 : " + isValid({id: 1, name: "철수", age: 20})  ); // { id: true, name: true, age: true }
     ```
   ### 픽 `Pick<T,K>` : K(key), T(type)
-    Pick 타입은 특정 프로퍼티만 선택하여 새로운 타입을 만듭니다.
-    + 인터페이스에서 원하는 속성만 사용.
+  Pick 타입은 특정 프로퍼티만 선택하여 새로운 타입을 만듭니다.
+  - 인터페이스에서 원하는 속성만 사용.
     ``` ts
       /**
       * Pick 타입은 특정 프로퍼티만 선택하여 새로운 타입을 만듭니다.
@@ -761,15 +761,15 @@
   ### 익스클루드 `Exclude<T1, T2>` : 중복된 타입 제외
   Exclude 타입은 유니온 타입에서 특정 타입을 제외한 새로운 타입을 만듭니다.
   - T1에서 T2와 중복되는 타입을 제외시킴
-  ``` ts
-    type T1 = string | number | boolean;
-    type T2 = Exclude<T1, number | boolean>; // T1에서 number와 boolean을 제외한 타입입니다.
-    // T2는 string 타입이 됩니다.
-  ```
+    ``` ts
+      type T1 = string | number | boolean;
+      type T2 = Exclude<T1, number | boolean>; // T1에서 number와 boolean을 제외한 타입입니다.
+      // T2는 string 타입이 됩니다.
+    ```
   ### 넌너러블 `NonNullable<Type>`
   - `null`과 `undefined`를 제외한 탑입생
-  ``` ts
-    type T3 = string | number | null | undefined;
-    type T4 = NonNullable<T3>; // T3에서 null과 undefined를 제외한 타입입니다.
-    // T4는 string | number 타입이 됩니다.
-  ```
+    ``` ts
+      type T3 = string | number | null | undefined;
+      type T4 = NonNullable<T3>; // T3에서 null과 undefined를 제외한 타입입니다.
+      // T4는 string | number 타입이 됩니다.
+    ```
