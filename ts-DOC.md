@@ -742,22 +742,22 @@
   ### 오밋 `Omit<T,K>` : 선택한 속성을 제외 하고 사용
   Omit 타입은 특정 프로퍼티를 제외한 새로운 타입을 만듭니다.
   -  age, gender 제외한 타입 
-    ``` ts
-      /**
-      * Omit 타입은 특정 프로퍼티를 제외한 새로운 타입을 만듭니다.
-      * 예를 들어, User9_6에서 age와 gender만 제외하고 id와 name만 선택하고 새로운 타입을 만듭니다.
-      */    
-      interface User9_6 {
-        id: number;    
-        name: string;
-        age: number;
-        gender : "male" | "female";
-      }
-      const admin9_6: Omit<User9_6, "age" | "gender"> = {
-        id: 1,
-        name: "철수"
-      }
-    ```
+  ``` ts
+    /**
+    * Omit 타입은 특정 프로퍼티를 제외한 새로운 타입을 만듭니다.
+    * 예를 들어, User9_6에서 age와 gender만 제외하고 id와 name만 선택하고 새로운 타입을 만듭니다.
+    */    
+    interface User9_6 {
+      id: number;    
+      name: string;
+      age: number;
+      gender : "male" | "female";
+    }
+    const admin9_6: Omit<User9_6, "age" | "gender"> = {
+      id: 1,
+      name: "철수"
+    }
+  ```
   ### 익스클루드 `Exclude<T1, T2>` : 중복된 타입 제외
   Exclude 타입은 유니온 타입에서 특정 타입을 제외한 새로운 타입을 만듭니다.
   - T1에서 T2와 중복되는 타입을 제외시킴
